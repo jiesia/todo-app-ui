@@ -1,16 +1,42 @@
-# Vue 3 + TypeScript + Vite
+# Todo Application
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A todo application written by Vue3 & Pinia.
 
-## Recommended IDE Setup
+## Getting start
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+### Frontend
 
-## Type Support For `.vue` Imports in TS
+Firstly, clone this repo which is frontend project of todo application:
+```bash
+git clone https://github.com/jiesia/todo-app-ui.git
+```
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+You need to install dependencies and then you can run it:
+```bash
+npm i # pnpm i
+npm run dev
+```
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+At this time, the frontend service will run at [http://localhost:3000](http://localhost:3000)
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+But now the backend service of todo application is not working. So it can't work well.
+
+### Backend
+
+Secondly, clone another repo which is backend project of todo application:
+```bash
+git clone https://github.com/jiesia/todo-app.git
+```
+
+Similarly, you also need to install dependencies for the backend project so that you can run it:
+```bash
+npm i # pnpm i
+npm run dev
+```
+
+At this time, the backend service will run at [http://localhost:8000](http://localhost:8000)
+
+### MongoDB
+Todo application chooses to use MongoDB as the database storage service. So you must install it on your device.
+
+At this point, your todo project can run normally.
